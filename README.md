@@ -2,6 +2,8 @@
 
 A full-stack cryptocurrency trading platform built with Spring Boot and React, featuring real-time coin data, wallet management, portfolio tracking, and automated trading.
 
+## Bakend Link : https://github.com/TirthChapla/NiveshX-Backend
+
 ![Java](https://img.shields.io/badge/Java-17-orange)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2.4-brightgreen)
 ![React](https://img.shields.io/badge/React-18.2.0-blue)
