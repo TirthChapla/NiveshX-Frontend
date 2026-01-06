@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+/* @layer base { *
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 224 71.4% 4.1%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 224 71.4% 4.1%;
+ 
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71.4% 4.1%;
+ 
+    --primary: 220.9 39.3% 11%;
+    --primary-foreground: 210 20% 98%;
+ 
+    --secondary: 220 14.3% 95.9%;
+    --secondary-foreground: 220.9 39.3% 11%;
+ 
+    --muted: 220 14.3% 95.9%;
+    --muted-foreground: 220 8.9% 46.1%;
+ 
+    --accent: 220 14.3% 95.9%;
+    --accent-foreground: 220.9 39.3% 11%;
+ 
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 20% 98%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 224 71.4% 4.1%;
+ 
+    --radius: 0.5rem;
+  }
+ 
+
+  .dark {
+    --background: 224 71.4% 4.1%;
+    --foreground: 210 20% 98%;
+ 
+    --card: 224 71.4% 4.1%;
+    --card-foreground: 210 20% 98%;
+ 
+    --popover: 224 71.4% 4.1%;
+    --popover-foreground: 210 20% 98%;
+ 
+    --primary: 210 20% 98%;
+    --primary-foreground: 220.9 39.3% 11%;
+ 
+    --secondary: 215 27.9% 16.9%;
+    --secondary-foreground: 210 20% 98%;
+ 
+    --muted: 215 27.9% 16.9%;
+    --muted-foreground: 217.9 10.6% 64.9%;
+ 
+    --accent: 215 27.9% 16.9%;
+    --accent-foreground: 210 20% 98%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 20% 98%;
+ 
+    --border: 215 27.9% 16.9%;
+    --input: 215 27.9% 16.9%;
+    --ring: 216 12.2% 83.9%;
+  }
+ } */
+ 
+@layer base {
+  :root {
+    --background: 0 0% 100%;        /* #17153B - dark blue */
+    --foreground: 0 0% 100%;          /* #FFFFFF - white text */
+    --card: 230 61% 22%;              /* #17153B */
+    --card-foreground: 0 0% 100%;     /* #FFFFFF */
+    --popover: 230 61% 22%;           /* #17153B */
+    --popover-foreground: 0 0% 100%;  /* #FFFFFF */
+    --primary: 226 91% 62%;           /* #4B70F5 - blue button */
+    --primary-foreground: 0 0% 100%;  /* #FFFFFF */
+    --secondary: 0 0% 100%;           /* #FFFFFF */
+    --secondary-foreground: 230 61% 22%; /* #17153B */
+    --muted: 230 61% 22%;             /* #17153B */
+    --muted-foreground: 0 0% 100%;    /* #FFFFFF */
+    --accent: 226 91% 62%;            /* #4B70F5 */
+    --accent-foreground: 0 0% 100%;   /* #FFFFFF */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 0 0% 100%;              /* #FFFFFF */
+    --input: 0 0% 100%;               /* #FFFFFF */
+    --ring: 226 91% 62%;              /* #4B70F5 */
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 245 101% 6.69%;        /* #17153B */
+    --foreground: 0 0% 90%;              /* #FFFFFF */
+    --card: 230 61% 22%;                 /* #17153B */
+    --card-foreground: 0 0% 100%;        /* #FFFFFF */
+    --popover: 230 61% 22%;              /* #17153B */
+    --popover-foreground: 0 0% 100%;     /* #FFFFFF */
+    --primary: 226 91% 62%;              /* #4B70F5 */
+    --primary-foreground: 230 61% 22%;   /* #17153B */
+    --secondary: 200 100% 50%;            /* #FFCC00 - changed to yellow */
+    --secondary-foreground: 230 61% 22%; /* #17153B */
+    --muted: 230 61% 22%;                /* #17153B */
+    --muted-foreground: 0 0% 100%;       /* #FFFFFF */
+    --accent: 226 91% 62%;               /* #4B70F5 */
+    --accent-foreground: 48 100% 50%;    /* #FFCC00 - changed to yellow */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 200 100% 30%;               /* #FFCC00 - changed to yellow */
+    --input: 200 100% 50%;                /* #FFCC00 - changed to yellow */
+    --ring: 226 91% 62%;                 /* #4B70F5 */
+}
+  
+   
+}
+
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply dark bg-background text-foreground overflow-x-hidden;
+  }
+}
+
+/* Styles for the scrollable container */
+.scroll-container {
+  overflow-y: auto;
+}
+
+/* Custom scrollbar styles for Webkit browsers (Chrome, Safari) */
+.scroll-container::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+  background: transparent;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background: transparent; /* Background of the scrollbar track */
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background:#1e293b; /* Color of the scrollbar thumb */
+  border-radius: 5rem;
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the scrollbar thumb on hover */
+}
+
+
+
+/* Optional: Ensure custom scrollbars work in Internet Explorer and Edge */
+.scroll-container {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
