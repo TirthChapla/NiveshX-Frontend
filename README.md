@@ -1,4 +1,4 @@
-# Trading Platform - Cryptocurrency Trading Application
+# NivesX - Cryptocurrency Trading Application
 
 A full-stack cryptocurrency trading platform built with Spring Boot and React, featuring real-time coin data, wallet management, portfolio tracking, and automated trading.
 
